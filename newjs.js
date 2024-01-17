@@ -15,7 +15,7 @@ console.log("This is what you entered: " + req + " and is stored in req");
 
 console.log("this is the number: " + number1 + " and is stored in number1");
 
-let newnumber1 = 455;
+let newnumber1 = 456;
 
 for(var i = 1; i <= 5; i++){
     newfunction(newnumber1);
