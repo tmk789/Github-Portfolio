@@ -1,0 +1,17 @@
+/*
+filename: stylesheet.css
+
+*/
+
+
+nav {
+    
+    float: left;
+    width: 100%;
+    
+}
+
+.menu{
+    float: left;
+    width:25%;
+}
