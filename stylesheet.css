@@ -4,14 +4,28 @@ filename: stylesheet.css
 */
 
 
-nav {
-    
-    float: left;
-    width: 100%;
-    
-}
+
+
+
 
 .menu{
     float: left;
     width:25%;
+}
+
+div {
+    outline-style: solid;
+    outline-color: purple;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+
+nav::after {
+    display: table;
+    content: '';
+    clear: left;
 }
