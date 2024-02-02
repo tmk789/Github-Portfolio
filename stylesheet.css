@@ -16,16 +16,16 @@ aaa
 div {
     outline-style: solid;
     outline-color: purple;
-    width: 80%;
+    width: 75%;
     text-align: center;
     margin: auto;
     
 
 }
 
-
 nav::after {
     display: table;
     content: '';
     clear: left;
 }
+
