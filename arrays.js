@@ -44,6 +44,7 @@ function newnum(param1, param2)
     
 }
 
+///kkkkk
 
 for (let num in newArray){
     newnum(newFunction, num);
