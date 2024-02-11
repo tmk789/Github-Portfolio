@@ -1,0 +1,45 @@
+/*
+Filename: unitOneProjectStyleSheet.css
+
+*/
+.menu{
+  float: left;
+  width:25%;
+}
+
+
+nav::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+  
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+  
+body{
+  background-color: green;
+}
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
