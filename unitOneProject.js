@@ -5,14 +5,7 @@ Author: Taylor Kubik
 Date 2/11/2024
 */
 
-//get the generate id
-var generateButtonId = document.getElementById("generate");
 
-//create a textnode generate
-var generateText = document.createTextNode("Generate");
-
-//append the text to the button
-generateButtonId.appendChild(generateText);
 
   //generate a customized multiplication table
   const MultiplicationTable = () => {
@@ -38,7 +31,7 @@ generateButtonId.appendChild(generateText);
       headerRow.appendChild(headerCell);
     }
 
-    // Generate multiplication table using nested loops
+    // Generate multiplication table 
     for (let i = 1; i <= 10; i++) {
       //create the table row element
       const row = document.createElement('tr');
@@ -62,12 +55,9 @@ generateButtonId.appendChild(generateText);
     }
   };
   
-  //get generate
-  const generateButton = document.getElementById('generate');
-  //add a click event to the button and run function
-  generateButton.addEventListener('click', MultiplicationTable);
+
   
-    // Event listener for input field to regenerate the table dynamically
+    //event listener for input field to regenerate the table dynamically
     const multiplierInput = document.getElementById('multiplier');
     multiplierInput.addEventListener('input', () => {
       MultiplicationTable();
