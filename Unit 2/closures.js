@@ -1,6 +1,6 @@
 //new function given the name, hp and a rest parameter of moves
 function newFunc(name, hp, ...moves){
-    //private
+    //private vars
     let nameVar = name;
     let hpVar = hp;
     let movesVar = moves;
@@ -16,27 +16,17 @@ function newFunc(name, hp, ...moves){
         },
         //method
         movesOne(){
-            //store moves
-            let movesTwo = "";
+            //selecting the class .moves
+            const findMoves = document.querySelector(".moves");
             //for of looping through rest param
             for(const newMoves of moves) {
-                //selecting the class of .moves div
-                const findMoves = document.querySelector(".moves");
-                //newMoves being added to movesTwo
-                movesTwo += newMoves;
                 //create element paragraph
                 const createP = document.createElement("p");
-                //create text node movesTwo
-                const createText = document.createTextNode(movesTwo);
+                //add newmoves to the paragraph
+                createP.textContent = newMoves;
                 //append
-                createP.appendChild(createText);
                 findMoves.appendChild(createP);
-                
-                
-                
             }
-            //return movesTwo
-            return movesTwo;
         }
     }
 }
